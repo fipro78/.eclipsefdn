@@ -12,6 +12,15 @@ orgs.newOrg('eclipse-nattable') {
     readers_can_create_discussions: true,
     web_commit_signoff_required: false,
   },
+  webhooks+: [
+    orgs.newOrgWebhook('https://ci.eclipse.org/nattable/github-webhook/') {
+      content_type: "json",
+      events+: [
+        "pull_request",
+        "push"
+      ],
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('nattable') {
       allow_merge_commit: true,
