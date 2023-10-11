@@ -35,6 +35,7 @@ orgs.newOrg('eclipse-nattable') {
         "swt"
       ],
       web_commit_signoff_required: false,
+      has_discussions: true,
     },
     orgs.newRepo('nattable-website') {
       allow_merge_commit: true,
