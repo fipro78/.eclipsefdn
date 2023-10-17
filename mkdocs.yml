@@ -1,6 +1,6 @@
 site_name: Otterdog configuration @ eclipse-nattable
 site_description: Otterdog configuration @ eclipse-nattable
-strict: true
+strict: false
 
 site_url: https://eclipse-nattable.github.io/.eclipsefdn/
 
