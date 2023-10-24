@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-nattable') {
   settings+: {
-    default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     members_can_change_project_visibility: false,
@@ -28,6 +27,7 @@ orgs.newOrg('eclipse-nattable') {
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "High performance SWT data grid",
+      has_discussions: true,
       homepage: "https://eclipse.dev/nattable/",
       topics+: [
         "eclipse-rcp",
@@ -35,7 +35,6 @@ orgs.newOrg('eclipse-nattable') {
         "swt"
       ],
       web_commit_signoff_required: false,
-      has_discussions: true,
     },
     orgs.newRepo('nattable-website') {
       allow_merge_commit: true,
