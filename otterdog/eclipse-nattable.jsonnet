@@ -5,7 +5,6 @@ orgs.newOrg('eclipse-nattable') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     name: "Eclipse Nebula NatTable",
-    readers_can_create_discussions: true,
     web_commit_signoff_required: false,
   },
   webhooks+: [
