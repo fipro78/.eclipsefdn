@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-nattable') {
+orgs.newOrg('technology.nebula.nattable', 'eclipse-nattable') {
   settings+: {
     description: "",
     name: "Eclipse Nebula NatTable",
