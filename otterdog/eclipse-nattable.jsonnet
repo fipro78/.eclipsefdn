@@ -31,6 +31,23 @@ orgs.newOrg('technology.nebula.nattable', 'eclipse-nattable') {
       ],
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('nattable-rap') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      default_branch: "master",
+      delete_branch_on_merge: false,
+      description: "Nebula NatTable RAP Fragment",
+      has_discussions: true,
+      homepage: "https://eclipse.dev/nattable/",
+      topics+: [
+        "eclipse-rcp",
+        "java",
+        "swt",
+		"rap",
+		"rwt"
+      ],
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('nattable-website') {
       allow_merge_commit: true,
       allow_update_branch: false,
